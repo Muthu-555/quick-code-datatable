@@ -81,6 +81,7 @@ This project implements a reusable, configurable data table component with the f
 - Row selection callback  
 - Horizontal scrolling for smaller screens  
 - Vertical scrolling for high number of datas
+- Pagination
 - Loading and error states  
 - Clean UI with CSS Modules  
 - Fetching data from a public API (`jsonplaceholder.typicode.com/users`)
