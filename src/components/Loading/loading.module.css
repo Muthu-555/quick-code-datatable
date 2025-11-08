@@ -1,0 +1,45 @@
+.loading {
+  padding: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingBar {
+  width: 40px;
+  height: 4px;
+  background: #cccccc;
+  margin: 8px auto 0;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loadingBar::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background: #4a8bff;
+  animation: slide 0.9s linear infinite;
+  border-radius: 4px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(80px);
+  }
+}
